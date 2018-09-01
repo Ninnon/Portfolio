@@ -1,0 +1,57 @@
+canvas {
+    width: 100%;
+    background-color:#262626;
+    margin:0;
+}
+
+body, html {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+
+.name {
+    color: #66b3ff;
+}
+a.btn.btn-lg.btn-success {
+    background-color: #66b3ff;
+    margin-top:2%;
+}
+
+.viewWork {
+    padding-right:8%;
+}
+
+.navbar {
+    position:absolute;
+} */
+
+#container {
+  position: relative;
+}
+#container canvas, #overlay {
+  position: absolute;
+  height:100%;
+}
+canvas {
+  border: 1px solid black;
+}
+
+#intro {
+    text-align:center;
+    position:relative;
+    padding:35vh;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav.navbar.navbar-inverse {
+    margin-bottom: 0px;
+    border-bottom: 2px solid #66b3ff;
+}
+
+
+h1 {
+    text-align:center;
+}

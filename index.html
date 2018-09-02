@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Load the Paper.js library -->
-<!-- <script type="text/javascript" src="Assets/site.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
 <script type="text/javascript" src="Assets/site.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="Assets/view.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"  crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
@@ -40,7 +45,7 @@ function onFrame(event) {
 
         // Move the item 1/20th of its width to the right. This way
         // larger circles move faster than smaller circles:
-        item.position.x += item.bounds.width / 20;
+        item.position.x += item.bounds.width / 3;
 
         // If the item has left the view on the right, move it back
         // to the left:
@@ -53,15 +58,12 @@ function onFrame(event) {
 </head>
 <body>
 
-     <!-- <canvas id="myCanvas" resize>
-        
-    </canvas> -->
 
     
 
 
 <div id="container">
-    <canvas id="myCanvas"></canvas>
+    <canvas id="myCanvas" resize></canvas>
     <div class="container" id="intro">
         <div class="row">
             <div class="col-xs-12">
@@ -72,45 +74,56 @@ function onFrame(event) {
         </div>
     </div> 
 </div>
-<br><br><br>
 
 
-    <nav class="navbar navbar-inverse" id="myHeader">
+<nav class="navbar navbar-inverse" id="myHeader">
         <div class="container">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#">WebSiteName</a>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
 
 
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
-<h1>Test Content</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>Testing</h1>
+            <h1>Testing</h1>
+            <h1>Testing</h1>
+            <h1>Testing</h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    
 
 
    

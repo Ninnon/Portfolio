@@ -1,12 +1,5 @@
-window.onscroll = function () { myFunction() };
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-}
+$(document).ready(function () {
+    var canvas = document.getElementById("theCanvas");
+    canvas.width = $("#parent").width();
+    canvas.height = $("#parent").height();
+});

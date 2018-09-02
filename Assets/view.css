@@ -13,22 +13,16 @@ canvas {
 .name {
     color: #66b3ff;
 }
-a.btn.btn-lg.btn-success {
+a.btn.btn-lg.btn-primary {
     background-color: #66b3ff;
     margin-top:2%;
-}
-
-.btn-success {
-    background-color:blue;
 }
 
 .viewWork {
     padding-right:8%;
 }
 
-.navbar {
-    /* position:absolute; */
-} */
+ */
 
 
 #container {
@@ -78,11 +72,15 @@ h1 {
 }
 
 
-/* #myHeader {
-    position:absolute;
-    top:0;
-    width:100%;
-} */
+#myHeader {
+    border:0px;
+    border-radius: 0px;
+}
+
+#logo {
+    margin-right: 25px;
+    margin-top: 4px;
+}
 
 
 

@@ -50,12 +50,6 @@ h1 {
     text-align:center;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 102px;
-}
 
 
 #navMenu {
@@ -66,6 +60,22 @@ h1 {
 #logo {
     margin-right: 25px;
     margin-top: 4px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:2;
+}
+
+.containerBottom {
+    overflow:hidden;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 

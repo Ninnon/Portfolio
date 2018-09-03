@@ -11,6 +11,30 @@ canvas {
     margin:0;
 }
 
+.box {
+         width:400px;
+        height:400px;
+        background-color:#aaaa00;
+        margin:150px auto;
+ }
+
+.lineUnder {
+   border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width:15%;
+}
+
+#topView {
+    padding-top:100px;
+}
+ 
+
+ .about {
+     padding-top:60px;
+ }
+
+
 .name {
     color: #66b3ff;
 }
@@ -28,6 +52,10 @@ canvas {
   height:100%;
 }
 
+.titleFont {
+    font-size:42px;
+}
+
 #container {
     width: 100%;
     min-height:100%;
@@ -35,7 +63,7 @@ canvas {
 
 #intro {
     text-align:center;
-    padding-top:30vh;
+    padding-top:35vh;
     color:white;
     font-family: 'Raleway', sans-serif;
 }
@@ -50,16 +78,23 @@ h1 {
     text-align:center;
 }
 
+#myNavbar ul li {
+    padding-left: 14px;
+    font-size:16px;
+}
 
+.navbar-inverse .navbar-nav>.active>a {
+    color: #66b3ff !important;
+}
 
 #navMenu {
     border:0px;
     border-radius: 0px;
+    border-bottom: 3px solid #66b3ff;
 }
 
 #logo {
-    margin-right: 25px;
-    margin-top: 4px;
+    margin: 5px 25px 0px 25px;
 }
 
 .sticky {
@@ -69,14 +104,10 @@ h1 {
   z-index:2;
 }
 
-.containerBottom {
-    overflow:hidden;
-}
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 60px;
-}
+} */
 
 
 

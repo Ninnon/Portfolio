@@ -4,9 +4,10 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
-<script type="text/javascript" src="Assets/site.js"></script>
+<script type="text/javascript" src="Assets/js/site.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" type="text/css" href="Assets/view.css">
+<link rel="stylesheet" type="text/css" href="Assets/css/view.css">
+<link rel="stylesheet" href="Assets/css/animations.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"  crossorigin="anonymous">
@@ -24,7 +25,7 @@ var count = 400;
 // Create a symbol, which we will use to place instances of later:
 var path = new Path.Circle({
     center: [0, 0],
-    radius: 0.7,
+    radius: 0.6,
     fillColor: '#66b3ff',
     strokeColor: '#66b3ff'
 });
@@ -67,16 +68,16 @@ function onFrame(event) {
     <div class="container" id="intro">
         <div class="row">
             <div class="col-xs-12">
-                <h1>Hi, I'm <span class="name">Trenton Neilson.</span></h1>
-                <h1>I'm an aspiring full-stack web developer.</h1>
-                <a href="#" class="btn btn-lg btn-primary"><span class="viewWork">View Work</span><i class="fas fa-arrow-right"></i></a>
+                <h1 class="titleFont">Hello, I'm <span class="name">Trenton Neilson.</span></h1>
+                <h1 class="titleFont">I'm a full-stack web developer</h1>
+                <a href="#" id="viewWorkButton"class="btn btn-lg btn-primary"><span class="viewWork">View Work</span><i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </div> 
 </div>
 
 <div id="navBar">
-<nav class="navbar navbar-inverse" id="navMenu">
+    <nav class="navbar navbar-inverse" id="navMenu">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
@@ -102,34 +103,58 @@ function onFrame(event) {
                 </ul>
             </div>  
     </nav>
-    </div>
+</div>
 
 
 
-<div class="containerBottom">
+<div class="container" id="topView">
     <div class="row">
         <div class="col-xs-12">
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
-            <h1>Testing</h1>
+            <div class="animatedParent animateOnce" data-sequence="500">
+                    <h1 class="animated fadeInLeft" data-id="1">About</h1>
+                    <hr class="animated fadeInLeft lineUnder" data-id="2">
+            </div>
         </div>
     </div>
+        <div class="row">
+            <div class="animatedParent animateOnce" data-sequence="500">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h2 class="animated fadeInLeft" data-id="1">Dynamic</h2>
+                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="1" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" height="120" width="120" alt="t"> -->
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h2 class="animated fadeInLeft" data-id="2">Reliable</h2>
+                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="2" src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg" height="120" width="120" alt="t"> -->
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h2 class="animated fadeInLeft" data-id="3">Intuitive</h2>
+                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="3" src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" height="120" width="120" alt="t"> -->
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <h2 class="animated fadeInLeft" data-id="4">Responsive</h2>
+                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="4" src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_1280.png" height="120" width="120" alt="t"> -->
+                </div>
+            </div>
+        </div>
 </div>
+
+
+
+
+
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
+<h1>Test okay</h1>
 
 
 
@@ -140,6 +165,6 @@ function onFrame(event) {
 
 
    
-
+<script src="Assets/js/css3-animate-it.js"></script>
 </body>
 </html>

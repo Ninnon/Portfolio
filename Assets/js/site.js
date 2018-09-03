@@ -6,6 +6,9 @@
 
 
 window.onload = function () {
+
+
+
 window.onscroll = function () { myFunction() };
 
 // Get the navbar
@@ -22,4 +25,13 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+    $("#viewWorkButton").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#topView").offset().top
+        },
+            'slow');
+    });
+
+
 }

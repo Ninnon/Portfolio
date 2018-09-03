@@ -4,6 +4,7 @@ body, html {
     padding:0;
 }
 
+
 canvas {
     width: 100%;
     background-color:#262626;
@@ -14,30 +15,15 @@ canvas {
     color: #66b3ff;
 }
 a.btn.btn-lg.btn-primary {
-    background-color: #66b3ff;
     margin-top:2%;
 }
 
 .viewWork {
     padding-right:8%;
 }
-
- */
-
-
-#container {
-position:fixed !important;
-position:absolute;
-top:0;
-right:0;
-bottom:0;
-left:0;
-}
-#container canvas, #overlay {
+canvas {
   position: absolute;
   height:100%; 
-}
-canvas {
   border: 1px solid black;
   height:100%;
 }
@@ -72,7 +58,7 @@ h1 {
 }
 
 
-#myHeader {
+#navMenu {
     border:0px;
     border-radius: 0px;
 }

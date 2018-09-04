@@ -54,7 +54,7 @@ canvas {
 }
 
 #topView {
-    padding-top:120px;
+    padding-top:90px;
 }
  
 
@@ -134,7 +134,7 @@ h1 {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #topView {
-  padding-top:170px;
+  padding-top:140px;
 }
 
 

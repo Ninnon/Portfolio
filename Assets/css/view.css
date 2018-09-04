@@ -11,11 +11,39 @@ canvas {
     margin:0;
 }
 
+.largeIcon {
+    font-size:8em;
+    color: #66b3ff;
+}
+
+.smallIcon {
+    position:absolute;
+    color: #262626;
+    left:0;
+    right:0;
+    font-size:38px;
+    top:35px;
+
+}
+
+#personalPhoto {
+    width: 100%;
+}
+
 .box {
          width:400px;
         height:400px;
         background-color:#aaaa00;
         margin:150px auto;
+ }
+
+ .meDescription {
+     text-align:center;
+ }
+
+ #skillsRow {
+     text-align:center;
+     margin-bottom:62px;
  }
 
 .lineUnder {
@@ -36,7 +64,7 @@ canvas {
 
 
 .name {
-    color: #66b3ff;
+    color: #33ffcc;
 }
 a.btn.btn-lg.btn-primary {
     margin-top:2%;
@@ -84,7 +112,7 @@ h1 {
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    color: #66b3ff !important;
+    color: #33ffcc !important;
 }
 
 #navMenu {

@@ -26,7 +26,7 @@ var count = 400;
 var path = new Path.Circle({
     center: [0, 0],
     radius: 0.6,
-    fillColor: '#66b3ff',
+    fillColor: '##33ffcc',
     strokeColor: '#66b3ff'
 });
 var symbol = new Symbol(path);
@@ -92,13 +92,13 @@ function onFrame(event) {
                         <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Page 1</a>
+                        <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Page 2</a>
+                        <a href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a href="#">Page 3</a>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>  
@@ -110,51 +110,58 @@ function onFrame(event) {
 <div class="container" id="topView">
     <div class="row">
         <div class="col-xs-12">
-            <div class="animatedParent animateOnce" data-sequence="500">
+            <div class="animatedParent animateOnce" data-sequence="200">
                     <h1 class="animated fadeInLeft" data-id="1">About</h1>
                     <hr class="animated fadeInLeft lineUnder" data-id="2">
             </div>
         </div>
     </div>
-        <div class="row">
-            <div class="animatedParent animateOnce" data-sequence="500">
-                <div class="col-md-3 col-sm-4 col-xs-12">
+        <div class="row" id="skillsRow">
+            <div class="animatedParent animateOnce" data-sequence="200">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <i class="fas fa-certificate animated fadeInLeft largeIcon" data-id="1"><i class="fas fa-fighter-jet smallIcon"></i></i>
                     <h2 class="animated fadeInLeft" data-id="1">Dynamic</h2>
-                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="1" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" height="120" width="120" alt="t"> -->
+                    <strong><p>Static pages? Easy. Making pages stand out and be dynamic is what I love most.</p></strong>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
-                    <h2 class="animated fadeInLeft" data-id="2">Reliable</h2>
-                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="2" src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg" height="120" width="120" alt="t"> -->
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <i class="fas fa-certificate animated fadeInLeft largeIcon" data-id="2"><i class="fas fa-users smallIcon"></i></i>
+                    <h2 class="animated fadeInLeft" data-id="2">Reliable</h2> 
+                    <strong><p>Fast load times. Easy to use. I'm always thinking of the end user.</p></strong>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <i class="fas fa-certificate animated fadeInLeft largeIcon" data-id="3"><i class="far fa-lightbulb smallIcon"></i></i>
                     <h2 class="animated fadeInLeft" data-id="3">Intuitive</h2>
-                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="3" src="https://cdn.pixabay.com/photo/2016/04/04/14/12/monitor-1307227_1280.jpg" height="120" width="120" alt="t"> -->
+                    <strong><p>What more and what else would help our users? Always thinking of new ideas.</p></strong>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <i class="fas fa-certificate animated fadeInLeft largeIcon" data-id="4"><i class="fas fa-mobile-alt smallIcon"></i></i>
                     <h2 class="animated fadeInLeft" data-id="4">Responsive</h2>
-                    <!-- <img class="img-responsive img-rounded animated fadeInLeft" data-id="4" src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705_1280.png" height="120" width="120" alt="t"> -->
+                    <strong><p>Tablet or cell phone? My layouts will work on any device.</p></strong>
                 </div>
             </div>
         </div>
-</div>
 
 
 
+    <div class="row">
+        <div class="animatedParent animateOnce">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="animated fadeInLeft">
+                    <img class="img-responsive img-rounded" src="https://i.imgur.com/F4hnShQ.png" alt="trenton" id="personalPhoto">
+                    <h2 class="meDescription">Who am I?</h2>
+                    <p class="meDescription">I'm a QA Enginer at 1800-CONTACTS looking to make the transition into web development. I am attending Salt Lake Community College where I attend 
+                        classes for Computer Science and am also self taught.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="animated fadeInRight">
+                <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rectangle_example.svg/1280px-Rectangle_example.svg.png" alt="placeholder">
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
-<h1>Test okay</h1>
 
 
 

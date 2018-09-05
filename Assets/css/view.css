@@ -185,8 +185,6 @@ h1 {
     BORDER-RADIUS: 0px;
 }
 
-
-
 .progress-bar {
     background-image: -webkit-linear-gradient(top,#116466 0,#116466 100%);
     background-image: -o-linear-gradient(top,#116466 0,#116466 100%);
@@ -195,28 +193,6 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff286090', GradientType=0);
     background-repeat: repeat-x;
     line-height:30px;
-}
-
-/* .btn-group-lg>.btn, .btn-lg {
-    padding: 10px 24px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    border: 2px solid white;
-    color: white;
-} */
-
-.btn-primary {
-    /* padding:10px 24px; */
-    background-image: -webkit-linear-gradient(top,#4dffdb 0,#4dffdb 100%);
-    background-image: -o-linear-gradient(top,#4dffdb 0,#4dffdb 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#4dffdb),to(#4dffdb));
-    background-image: linear-gradient(to bottom,#4dffdb 0,#4dffdb 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    background-repeat: repeat-x;
-    color: #272727;
-    border:none;
 }
 
 #buttonText {

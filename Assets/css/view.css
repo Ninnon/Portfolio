@@ -88,9 +88,6 @@ canvas {
 .name {
     color:  #4dffdb;
 }
-a.btn.btn-lg.btn-primary {
-    margin-top:2%;
-}
 
 .viewWork {
     padding-right:5%;
@@ -218,6 +215,8 @@ padding-right:8px;
     background-color: #4dffdb;
     color: #272727;
 }
+
+/* test */
 
 
 

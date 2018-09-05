@@ -26,7 +26,7 @@ function myFunction() {
     }
 }
 
-    $("#viewWorkButton").click(function () {
+    $(".myButton").click(function () {
         $('html,body').animate({
             scrollTop: $("#topView").offset().top
         },

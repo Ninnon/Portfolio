@@ -219,18 +219,26 @@ h1 {
     border:none;
 }
 
-.btn-primary:hover {
-    background-color: #4dffdb;
-    color: #272727;
-    border:none;
+#buttonText {
+padding-right:8px;
 }
 
-.btn-primary.focus, .btn-primary:focus {
-    color: #fff;
-    background-color: #4dffdb;
-    border:none;
-    color: #272727;
+.myButton, myButton:focus {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid #4dffdb;
+    color: #4dffdb;
+    font-size:20px;
+    padding:10px 15px;
+    margin-top:10px;
+    border-radius:8px;
 }
+
+
 
 
 

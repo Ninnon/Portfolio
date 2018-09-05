@@ -93,7 +93,7 @@ a.btn.btn-lg.btn-primary {
 }
 
 .viewWork {
-    padding-right:8%;
+    padding-right:5%;
 }
 canvas {
   position: absolute;
@@ -197,13 +197,31 @@ h1 {
     line-height:30px;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+/* .btn-group-lg>.btn, .btn-lg {
     padding: 10px 24px;
     font-size: 18px;
     line-height: 1.3333333;
     border-radius: 6px;
     border: 2px solid white;
     color: white;
+} */
+
+.btn-primary {
+    /* padding:10px 24px; */
+    background-image: -webkit-linear-gradient(top,#4dffdb 0,#4dffdb 100%);
+    background-image: -o-linear-gradient(top,#4dffdb 0,#4dffdb 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#4dffdb),to(#4dffdb));
+    background-image: linear-gradient(to bottom,#4dffdb 0,#4dffdb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #245580;
+    color: #2C3551;
+}
+
+.btn-primary:hover {
+    background-color: #4dffdb;
+    color: #2C3551;
 }
 
 

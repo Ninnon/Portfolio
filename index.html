@@ -7,7 +7,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.5/paper-full.js"></script>
     <script type="text/javascript" src="Assets/js/site.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="Assets/css/view.css">
+    
     <link rel="stylesheet" href="Assets/css/animations.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
@@ -18,6 +18,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Assets/css/view.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
     <!-- Load external PaperScript and associate it with myCanvas -->
     <script type="text/paperscript" canvas="myCanvas">
@@ -28,8 +29,8 @@ var count = 400;
 var path = new Path.Circle({
     center: [0, 0],
     radius: 0.6,
-    fillColor: '##33ffcc',
-    strokeColor: '#66b3ff'
+    fillColor: '#D9B08C',
+    strokeColor: '#D9B08C'
 });
 var symbol = new Symbol(path);
 // Place the instances of the symbol:
@@ -75,7 +76,7 @@ function onFrame(event) {
                         <span class="name">Trenton Neilson.</span>
                     </h1>
                     <h1 class="titleFont">I'm a QA Analyst</h1>
-                    <a href="#" id="viewWorkButton" class="btn btn-lg btn-primary">
+                    <a href="#" id="viewWorkButton" class="btn btn-lg btn-outline-info">
                         <span class="viewWork">View My Work</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -114,7 +115,7 @@ function onFrame(event) {
     </div>
 
 
-
+    <section id="aboutMe">
     <div class="container" id="topView">
         <div class="row">
             <div class="col-xs-12">
@@ -179,16 +180,16 @@ function onFrame(event) {
             <div class="animatedParent animateOnce"  data-sequence="800">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="animated fadeInLeft" data-id="1">
-                        <img class="img-responsive img-rounded" src="https://i.imgur.com/F4hnShQ.png" alt="trenton" id="personalPhoto">
+                        <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="trenton" id="personalPhoto">
                         <h2 class="meDescription">Who am I?</h2>
-                        <p class="meDescription">I'm a QA Enginer at 1800-CONTACTS looking to make the transition into web development. I am attending
+                        <p class="meDescription">I'm a QA Enginer at <a href="https://1800contacts.com">1800-CONTACTS </a>looking to make the transition into web development. I am attending
                             Salt Lake Community College where I attend classes for Computer Science and am also self taught.
                         </p>
                     </div>
                 </div>
                 <div class="container">
-                    <div class="animated fadeInRight" data-id="1">
-                        <h2>My Skills</h2>
+                    <div class="animated fadeInRight col-md-6 col-sm-6 col-xs-12" data-id="1">
+                        <h2 class="skillsTitle">Skills</h2>
                         <div class="skills">HTML</div>
                         <div class="progress">
                             <div class="progress-bar animated fadeInLeft" data-id="2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
@@ -221,23 +222,43 @@ function onFrame(event) {
                 </div>
             </div>
         </div>
+    </div>
+
+        </section>
+
+<section id="projects">
+
+<div class="container">
+    <h1>Projects</h1>
+    <hr class="lineUnder">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
+            </div>
+            
+        </div>
+</div>
 
 
+</section>
 
 
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
-                <p>More testing content</p>
+            
 
 
 

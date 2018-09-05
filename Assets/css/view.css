@@ -133,7 +133,7 @@ h1 {
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    color: #4dffdb !important;
+    color: #FFCB9A;
 }
 
 #navMenu {
@@ -215,13 +215,14 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff265a88', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
     background-repeat: repeat-x;
-    border-color: #245580;
     color: #2C3551;
+    border:none;
 }
 
 .btn-primary:hover {
     background-color: #4dffdb;
-    color: #2C3551;
+    color: #272727;
+    border:none;
 }
 
 

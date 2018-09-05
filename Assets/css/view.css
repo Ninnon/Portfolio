@@ -225,6 +225,14 @@ h1 {
     border:none;
 }
 
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #4dffdb;
+    border:none;
+    color: #272727;
+}
+
+
 
 
 

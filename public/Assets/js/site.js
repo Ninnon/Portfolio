@@ -5,6 +5,10 @@
 // });
 
 
+function resetForm() {
+    document.querySelector("#contactForm").reset();
+}
+
 window.onload = function () {
 
 
@@ -25,6 +29,8 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+
 
     $(".myButton").click(function () {
         $('html,body').animate({

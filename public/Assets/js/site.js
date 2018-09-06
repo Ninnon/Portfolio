@@ -32,6 +32,30 @@ function myFunction() {
         },
             'slow');
     });
+    $(".home").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#myCanvas").offset().top
+        },
+            'slow');
+    });
+    $(".about").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#topView").offset().top
+        },
+            'slow');
+    });
+    $(".portfolio").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#portfolioView").offset().top -100
+        },
+            'slow');
+    });
+    $(".contact").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#contactView").offset().top
+        },
+            'slow');
+    });
 
 
 }

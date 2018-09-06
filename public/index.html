@@ -177,7 +177,7 @@ function onFrame(event) {
 
 
         <div class="row">
-            <div class="animatedParent animateOnce"  data-sequence="800">
+            <div class="animatedParent animateOnce"  data-sequence="500">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="animated fadeInLeft" data-id="1">
                         <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="trenton" id="personalPhoto">
@@ -229,29 +229,32 @@ function onFrame(event) {
 <section id="projects">
 
 <div class="container">
-    <h1>Projects</h1>
-    <hr class="lineUnder">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
-                <img class="img-responsive img-rounded center-block" src="Assets/Images/me2.png" alt="projects">
-            </div>
+    <div class="animatedParent animateOnce" data-sequence="300">
+        <h1 class="animated fadeInRight" data-id="1">Projects</h1>
+        <hr class="animated fadeInRight lineUnder" data-id="2"
+            <div class="row">
             
-        </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="3" src="Assets/Images/me2.png" alt="projects">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="3" src="Assets/Images/me2.png" alt="projects">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="3" src="Assets/Images/me2.png" alt="projects">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="4" src="Assets/Images/me2.png" alt="projects">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="4" src="Assets/Images/me2.png" alt="projects">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 projectPictures">
+                    <img class="img-responsive img-rounded center-block animated fadeInUp" data-id="4" src="Assets/Images/me2.png" alt="projects">
+                </div>
+            
+            </div>
+    </div>
 </div>
 
 
@@ -261,19 +264,20 @@ function onFrame(event) {
 
     
         <div class="container">
+            <div class="animatedParent animateOnce" data-sequence="300">
+                <h1 class="animated fadeInLeft" data-id="1">Contact Me</h1>
+                <hr class="animated fadeInLeft lineUnderContact" data-id="2">
 
-                <h1>Contact Me</h1>
-                <hr class="lineUnderContact">
+                    <form action="/contact" class="animated fadeInUpShort" data-id="3" id="contact-form" method="post" role="form">
+                
 
-            <form action="/contact" id="contact-form" method="post" role="form">
-        
-
-                <input type="text" id="fname" name="firstname" placeholder="Name">
-                <input type="text" id="lname" name="lastname" placeholder="Email">
-                <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
-                <input type="submit" class="emailButton" value="Submit">
-        
-            </form>
+                        <input type="text" id="fname" name="firstname" placeholder="Name">
+                        <input type="text" id="lname" name="lastname" placeholder="Email">
+                        <textarea id="subject" name="subject" placeholder="Your Message"></textarea>
+                        <input type="submit" class="emailButton" value="Submit">
+                
+                    </form>
+            </div>
         </div>
 
         

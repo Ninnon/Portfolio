@@ -5,9 +5,6 @@
 // });
 
 
-function resetForm() {
-    document.querySelector("#contactForm").reset();
-}
 
 window.onload = function () {
 

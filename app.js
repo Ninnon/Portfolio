@@ -18,7 +18,7 @@ app.post("/contact", function(req, res) {
         service: 'gmail',
         auth: {
             user: 'trentonneilson14@gmail.com',
-            pass: 'lraaqvpddddbyubb'
+            pass: 'test'
         }
     });
 

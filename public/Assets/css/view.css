@@ -54,11 +54,6 @@ canvas {
     padding-bottom:50px;
 }
 
-#contactForm {
-    width:50%;
-    margin:0 auto;
-}
-
 #emailSubmit {
     float:right;
 }
@@ -282,8 +277,6 @@ input[type=text], select, textarea {
     border:none;
 }
 
-
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color:  #D1E8E2;
     opacity: 1; /* Firefox */
@@ -296,6 +289,14 @@ input[type=text], select, textarea {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color:  #D1E8E2;
 }
+
+@media screen and (min-width: 768px) {
+  #contactForm {
+      width: 55%;
+      margin: 0 auto;
+  }
+}
+
 
 
 

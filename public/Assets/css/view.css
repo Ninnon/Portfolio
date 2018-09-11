@@ -132,7 +132,7 @@ canvas {
 
 #intro {
     text-align:center;
-    padding-top:35vh;
+    padding-top:25vh;
     color:white;
 }
 
@@ -297,6 +297,10 @@ input[type=text], select, textarea {
   #myNavbar ul li {
     padding-left: 14px;
     font-size:16px;
+}
+
+#intro {
+    padding-top:35vh;
 }
 
 

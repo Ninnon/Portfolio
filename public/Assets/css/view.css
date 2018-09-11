@@ -25,8 +25,12 @@ canvas {
     margin:0;
 }
 
+strong p {
+    font-size:12px;
+}
+
 .largeIcon {
-    font-size:8em;
+    font-size:7em;
     color: #116466;
 }
 
@@ -35,8 +39,8 @@ canvas {
     color: #FFCB9A;
     left:0;
     right:0;
-    font-size:38px;
-    top:35px;
+    font-size:30px;
+    top:32px;
 
 }
  
@@ -97,7 +101,7 @@ canvas {
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     width:25%;
-    margin-bottom:55px;
+    margin-bottom:40px;
 }
 
 .lineUnderContact {
@@ -203,6 +207,10 @@ h1 {
     text-align:center;
 }
 
+.pTop {
+    margin-bottom:22px;
+}
+
 .progress {
     height: 30px;
     margin-bottom: 20px;
@@ -227,6 +235,11 @@ h1 {
 
 #buttonText {
 padding-right:8px;
+}
+
+.projectContainer {
+    padding-right:16px;
+    padding-left:16px;
 }
 
 .myButton, myButton:focus {
@@ -311,6 +324,26 @@ input[type=text], select, textarea {
 
 .skills {
     width: 17%;
+}
+
+strong p {
+font-size: 14px;
+}
+
+.largeIcon {
+    font-size: 8em;
+}
+
+.smallIcon {
+    font-size: 38px;
+    top:35px;
+}
+
+.pTop {
+    margin-bottom: 0px;
+}
+.lineUnder {
+    margin-bottom:55px;
 }
 
 

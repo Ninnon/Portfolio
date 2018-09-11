@@ -176,7 +176,10 @@ h1 {
 }
 
 #logo {
-    margin: 5px 25px 0px 25px;
+    width: 10%;
+    position:relative;
+    top:12px;
+    left:12px;
 }
 
 .sticky {
@@ -344,6 +347,13 @@ font-size: 14px;
 }
 .lineUnder {
     margin-bottom:55px;
+}
+
+#logo {
+    width: 25%;
+    position:relative;
+    top:10px;
+    left:12px;
 }
 
 

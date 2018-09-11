@@ -37,6 +37,7 @@ canvas {
 }
  
 #aboutMe {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -98,11 +99,6 @@ canvas {
     width:25%;
     margin-bottom:55px;
 }
-
-#topView {
-    padding-top:50px;
-}
- 
 
  .about {
      padding-top:60px;
@@ -180,7 +176,7 @@ h1 {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #aboutMe {
-  padding-top:50px;
+  padding-top:105px;
 }
 
 .skills {

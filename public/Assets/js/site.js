@@ -27,11 +27,44 @@ function myFunction() {
     }
 }
 
+    if ($(window).width() < 768) {
+        $(".about").click(function () {
+            if ($("#navBar").hasClass("sticky")) {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top
+                },
+                    'slow');
+            } else {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top - 225
+                },
+                    'slow');
+            }
+        })
+
+    } else {
+        $(".about").click(function () {
+            if ($("#navBar").hasClass("sticky")) {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top
+                },
+                    'slow');
+            } else {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top - 50
+                },
+                    'slow');
+            }
+
+        });
+    }
+
 
 
     $(".myButton").click(function () {
+
         $('html,body').animate({
-            scrollTop: $("#topView").offset().top
+            scrollTop: $("#topView").offset().top - 50
         },
             'slow');
     });
@@ -41,15 +74,11 @@ function myFunction() {
         },
             'slow');
     });
-    $(".about").click(function () {
-        $('html,body').animate({
-            scrollTop: $("#topView").offset().top-50
-        },
-            'slow');
-    });
+
+   
     $(".portfolio").click(function () {
         $('html,body').animate({
-            scrollTop: $("#portfolioView").offset().top-100
+            scrollTop: $("#projects").offset().top - 50
         },
             'slow');
     });
@@ -63,34 +92,7 @@ function myFunction() {
     $('.navbar-nav>li>a').on('click', function () {
         $('.navbar-collapse').collapse('hide');
     });
-// above works. delete everything below if it screws it up
-
-    var sections = $('section')
-        , nav = $('nav')
-        , nav_height = nav.outerHeight();
-
-    $(window).on('scroll', function () {
-        var cur_pos = $(this).scrollTop();
-
-        sections.each(function () {
-            var top = $(this).offset().top - nav_height,
-                bottom = top + $(this).outerHeight();
-
-            if (cur_pos >= top && cur_pos <= bottom) {
-                
-                nav.find('li').removeClass('active');
-                sections.removeClass('active');
-
-                // $(this).addClass('active');
-                nav.find('li[class="scroll' + $(this).attr('class') + '"]').addClass('active');
-            }
-        });
-    });
-
-    $('li > a').click(function () {
-        $('li').removeClass('active');
-        $(this).parent().addClass('active');
-    });
 
 
-}
+    
+    }

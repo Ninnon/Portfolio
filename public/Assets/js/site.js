@@ -1,14 +1,5 @@
-// $(document).ready(function () {
-//     var canvas = document.getElementById("theCanvas");
-//     canvas.width = $("#parent").width();
-//     canvas.height = $("#parent").height();
-// });
-
-
 
 window.onload = function () {
-
-
 
 window.onscroll = function () { myFunction() };
 
@@ -59,12 +50,10 @@ function myFunction() {
         });
     }
 
-
-
     $(".myButton").click(function () {
 
         $('html,body').animate({
-            scrollTop: $("#topView").offset().top - 50
+            scrollTop: $("#topView").offset().top - 100
         },
             'slow');
     });
@@ -75,7 +64,6 @@ function myFunction() {
             'slow');
     });
 
-   
     $(".portfolio").click(function () {
         $('html,body').animate({
             scrollTop: $("#projects").offset().top - 50
@@ -93,6 +81,4 @@ function myFunction() {
         $('.navbar-collapse').collapse('hide');
     });
 
-
-    
-    }
+}

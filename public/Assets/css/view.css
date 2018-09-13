@@ -1,3 +1,5 @@
+/* #20d4ea */
+
 body, html {
     height:100%;
     margin:0;
@@ -27,12 +29,12 @@ strong p {
 
 .largeIcon {
     font-size:7em;
-    color: #116466;
+    color: #383838;;
 }
 
 .smallIcon {
     position:absolute;
-    color: #FFCB9A;
+    color: #20d4ea;
     left:0;
     right:0;
     font-size:30px;
@@ -59,7 +61,7 @@ strong p {
 #contactMe {
     padding-top:50px;
     background-color:#2D2D2D;
-    color: #D1E8E2;
+    color: #fff;
     padding-bottom:50px;
 }
 
@@ -103,7 +105,7 @@ strong p {
 .lineUnderContact {
     border: 0;
     height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(164, 182, 177), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
     width:25%;
     margin-bottom:55px;
 }
@@ -114,7 +116,7 @@ strong p {
 
 
 .name {
-    color:  #4dffdb;
+    color:  #20d4ea;
 }
 
 .viewWork {
@@ -125,7 +127,7 @@ canvas {
   height:100%; 
   width:100%;
   border: 1px solid black;
-  background-color:#272727;
+  background-color:black;
   margin:0;
 }
 
@@ -156,23 +158,44 @@ h1 {
     text-align:center;
 }
 
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a {
+    background-image: linear-gradient(to left, #20d4ea , #2D99E8);
+}
+
+
 /* #myNavbar ul li {
     padding-left: 14px;
     font-size:16px;
 } */
 
 .navbar-inverse .navbar-nav>li>a {
-    color: #D1E8E2;
+    color: #fff;
+    font-weight: 600;
 }
 
 .navbar-inverse .navbar-nav>.active>a {
-    color: #FFCB9A;
+    color: #fff;
+    font-weight: 600;
 }
 
 #navMenu {
-    border:0px;
+    border: 0px;
     border-radius: 0px;
-    border-bottom: 4px solid #116466;
+    border-bottom: 2px solid #20d4ea;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #20d4ea;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #383838;
+    background-color: #080808;
 }
 
 #logo {
@@ -197,7 +220,7 @@ h1 {
 .skills {
     position:relative;
     float:left;
-    background-color: #2C3531;
+    background-color: #383838;
     width:28%;
     text-align:center;
     border-top-left-radius: 4px;
@@ -226,14 +249,17 @@ h1 {
 }
 
 .progress-bar {
-    background-image: -webkit-linear-gradient(top,#116466 0,#116466 100%);
-    background-image: -o-linear-gradient(top,#116466 0,#116466 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#116466),to(#116466));
-    background-image: linear-gradient(to bottom,#116466 0,#116466 100%);
+    background-image: -webkit-linear-gradient(top,#20d4ea 0,#20d4ea 100%);
+    background-image: -o-linear-gradient(top,#20d4ea 0,#20d4ea 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#20d4ea),to(#20d4ea));
+    background-image: linear-gradient(to bottom,#20d4ea 0,#20d4ea 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff286090', GradientType=0);
     background-repeat: repeat-x;
-    line-height:30px;
-    color: #D1E8E2;
+    background-image: linear-gradient(to left, #20d4ea , #2D99E8);
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #buttonText {
@@ -252,8 +278,8 @@ padding-right:8px;
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    border: 2px solid #4dffdb;
-    color: #4dffdb;
+    border: 2px solid #20d4ea;
+    color: #20d4ea;
     font-size:20px;
     padding:10px 15px;
     margin-top:10px;
@@ -261,8 +287,9 @@ padding-right:8px;
 }
 
 .myButton:hover {
-    background-color: #4dffdb;
-    color: #272727;
+    background-color: #20d4ea;
+    color: black;
+    font-weight: 600;
 }
 
 .emailButton, emailButton:focus {
@@ -272,8 +299,8 @@ padding-right:8px;
     cursor:pointer;
     overflow: hidden;
     outline:none;
-    border: 1px solid #D1E8E2;
-    color: #D1E8E2;
+    border: 1px solid #fff;
+    color: #fff;
     font-size:14px;
     padding:5px 12px;
     border-radius:8px;
@@ -293,21 +320,27 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical; 
-    background-color: #116466;
+    background-image: linear-gradient(to bottom right, #20d4ea , #2D99E8);
     border:none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color:  #D1E8E2;
+    color:  #383838;
+    font-weight: 600;
     opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:  #D1E8E2;
+    color:  #383838;
+    font-weight: 600;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color:  #D1E8E2;
+    color:  #383838;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {

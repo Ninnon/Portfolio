@@ -1,5 +1,3 @@
-/* #20d4ea */
-
 body, html {
     height:100%;
     margin:0;
@@ -324,7 +322,7 @@ input[type=text], select, textarea {
     border:none;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: #383838;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

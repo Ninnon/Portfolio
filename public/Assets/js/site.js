@@ -86,7 +86,7 @@ function myFunction() {
     $(".myButton").click(function () {
 
         $('html,body').animate({
-            scrollTop: $("#topView").offset().top - 100
+            scrollTop: $("#topView").offset().top - 72
         },
             'slow');
     });

@@ -99,7 +99,7 @@ function myFunction() {
 
     $(".contact").click(function () {
         $('html,body').animate({
-            scrollTop: $("#contactView").offset().top
+            scrollTop: $("#contactView").offset().top - 80
         },
             'slow');
     });

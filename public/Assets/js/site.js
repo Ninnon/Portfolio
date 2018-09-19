@@ -28,12 +28,12 @@ function myFunction() {
             $(".about").click(function () {
                if($('#navBar').hasClass('sticky')) {
                    $('html,body').animate({
-                       scrollTop: $("#aboutMe").offset().top +30
+                       scrollTop: $("#aboutMe").offset().top
                    },
                        'slow');
                } else {
                    $('html,body').animate({
-                       scrollTop: $("#aboutMe").offset().top -200
+                       scrollTop: $("#aboutMe").offset().top -225
                    },
                        'slow');
                }

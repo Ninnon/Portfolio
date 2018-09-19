@@ -57,11 +57,20 @@ function myFunction() {
         })
 
     } else {
+        
         $(".about").click(function () {
-            $('html,body').animate({
-                scrollTop: $("#aboutMe").offset().top -30
-            },
-                'slow');
+            if($('#navBar').hasClass('sticky')) {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top
+                },
+                    'slow');
+            } else {
+                $('html,body').animate({
+                    scrollTop: $("#aboutMe").offset().top - 50
+                },
+                    'slow');
+            }
+            
         });
             $(".portfolio").click(function () {
                 $('html,body').animate({
@@ -77,7 +86,7 @@ function myFunction() {
     $(".myButton").click(function () {
 
         $('html,body').animate({
-            scrollTop: $("#topView").offset().top - 72
+            scrollTop: $("#topView").offset().top - 100
         },
             'slow');
     });

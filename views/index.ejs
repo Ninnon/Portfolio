@@ -256,9 +256,9 @@ function onFrame(event) {
                 <hr class="animated fadeInLeft lineUnderContact" data-id="2">
 
                     <form action="/contact" class="animated fadeInUpShort" data-id="3" id="contactForm" method="post" role="form">
-                        <input type="text" id="fname" name="name" placeholder="Name">
-                        <input type="text" id="lname" name="email" placeholder="Email">
-                        <textarea id="subject" name="message" placeholder="Your Message"></textarea>
+                        <input type="text" id="fname" name="name" placeholder="Name" required>
+                        <input type="text" id="lname" name="email" placeholder="Your Email" required>
+                        <textarea id="subject" name="message" placeholder="Message" required></textarea>
                         <input type="submit" class="emailButton" value="Submit" onclick="resetForm()">              
                     </form>
             </div>
@@ -271,22 +271,22 @@ function onFrame(event) {
 <a class="toTop"><div id="upArrow"><i class="fas fa-angle-double-up upIcon"></i></div></a>
 </div>
 <div id="socialContainer">
-    <a href="https://www.linkedin.com/in/trenton-neilson/">
+    <a href="https://www.linkedin.com/in/trenton-neilson/" target="_blank" required>
         <div class="square">
             <i class="fab fa-linkedin-in socialIcon"></i>
         </div>
     </a>
-    <a href="https://www.facebook.com/trenton.neilson"> 
+    <a href="https://www.facebook.com/trenton.neilson" target="_blank"> 
         <div class="square">
             <i class="fab fa-facebook-f socialIcon"></i>
         </div>
     </a>
-    <a href="https://www.instagram.com/t_neil14/">
+    <a href="https://www.instagram.com/t_neil14/" target="_blank">
         <div class="square">
             <i class="fab fa-instagram socialIcon"></i>
         </div>
     </a>
-    <a href="https://github.com/Ninnon">
+    <a href="https://github.com/Ninnon" target="_blank">
         <div class="square">
         <i class="fab fa-github socialIcon"></i>
         </div>

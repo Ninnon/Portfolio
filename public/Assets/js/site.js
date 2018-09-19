@@ -22,12 +22,62 @@ function myFunction() {
         $('.navbar-collapse').collapse('hide');
     });
 
-    
+    if ($('body').width() < 768) {
+        
+
+            $(".about").click(function () {
+               if($('#navBar').hasClass('sticky')) {
+                   $('html,body').animate({
+                       scrollTop: $("#aboutMe").offset().top +30
+                   },
+                       'slow');
+               } else {
+                   $('html,body').animate({
+                       scrollTop: $("#aboutMe").offset().top -200
+                   },
+                       'slow');
+               }
+
+
+        })
+
+        $(".portfolio").click(function () {
+            if ($('#navBar').hasClass('sticky')) {
+                $('html,body').animate({
+                    scrollTop: $("#projects").offset().top -30
+                },
+                    'slow');
+            } else {
+                $('html,body').animate({
+                    scrollTop: $("#projects").offset().top - 200
+                },
+                    'slow');
+            }
+
+        })
+
+    } else {
+        $(".about").click(function () {
+            $('html,body').animate({
+                scrollTop: $("#aboutMe").offset().top -30
+            },
+                'slow');
+        });
+            $(".portfolio").click(function () {
+                $('html,body').animate({
+                    scrollTop: $("#projects").offset().top -30
+                },
+                    'slow');
+            }
+
+    );
+
+}
 
     $(".myButton").click(function () {
 
         $('html,body').animate({
-            scrollTop: $("#topView").offset().top - 102
+            scrollTop: $("#topView").offset().top - 72
         },
             'slow');
     });
@@ -45,59 +95,11 @@ function myFunction() {
             'slow');
     });
 
-
-
-    if ($('body').width() < 768) {
-
-
-        $(".about").click(function () {
-            if ($('#navBar').hasClass('sticky')) {
-                $('html,body').animate({
-                    scrollTop: $("#aboutMe").offset().top + 30
-                },
-                    'slow');
-            } else {
-                $('html,body').animate({
-                    scrollTop: $("#aboutMe").offset().top - 200
-                },
-                    'slow');
-            }
-
-        })
-
-        $(".portfolio").click(function () {
-            if ($('#navBar').hasClass('sticky')) {
-                $('html,body').animate({
-                    scrollTop: $("#projects").offset().top - 30
-                },
-                    'slow');
-            } else {
-                $('html,body').animate({
-                    scrollTop: $("#projects").offset().top - 200
-                },
-                    'slow');
-            }
-
-        })
-
-    } else {
-        $(".about").click(function () {
-            $('html,body').animate({
-                scrollTop: $("#aboutMe").offset().top
-            },
-                'slow');
-        });
-        $(".portfolio").click(function () {
-            $('html,body').animate({
-                scrollTop: $("#projects").offset().top - 55
-            },
-                'slow');
-        }
-
-        );
-
-    }
-
-   
+    $(".toTop").click(function () {
+        $('html,body').animate({
+            scrollTop: $("#myCanvas").offset().top
+        },
+            'slow');
+    });
 
 }

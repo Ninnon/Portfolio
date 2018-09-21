@@ -14,12 +14,44 @@ a {
     cursor:pointer;
 }
 
-.projectPictures {
+
+.testing {
+    position:relative;
+}
+
+.trentonImage {
+opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.trentonImage {
+    opacity: 1;
     margin-bottom:30px;
 }
 
+.testing:hover .trentonImage {
+  opacity: 0.1;
+  cursor:pointer;
+}
 
-
+.testing:hover .middle {
+  opacity: 1;
+}
 
 strong p {
     font-size:11px;
@@ -327,6 +359,7 @@ padding-right:8px;
     padding-left:16px;
 }
 
+
 .myButton, myButton:focus {
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -346,6 +379,19 @@ padding-right:8px;
     background-color: #20d4ea;
     color: black;
     font-weight: 600;
+}
+
+.projectButton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 2px solid #20d4ea;
+    color: #20d4ea;
+    font-size:20px;
+    border-radius:8px;
 }
 
 .emailButton, emailButton:focus {

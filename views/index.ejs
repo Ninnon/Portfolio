@@ -124,7 +124,7 @@ function onFrame(event) {
                         <i class="fas fa-certificate largeIcon">
                             <i class="fas fa-fighter-jet smallIcon"></i>
                         </i>
-                        <h2>Dynamic</h2>
+                        <h2 class="skillNames">Dynamic</h2>
                         <strong>
                             <p class="pTop">Static pages? Easy. Making pages stand out and be dynamic is what I love most.</p>
                         </strong>
@@ -135,7 +135,7 @@ function onFrame(event) {
                         <i class="fas fa-certificate largeIcon">
                             <i class="fas fa-users smallIcon"></i>
                         </i>
-                        <h2>Reliable</h2>
+                        <h2 class="skillNames">Reliable</h2>
                         <strong>
                             <p class="pTop">Fast load times. Easy to use. I'm always thinking of the end user.</p>
                         </strong>
@@ -146,7 +146,7 @@ function onFrame(event) {
                         <i class="fas fa-certificate largeIcon">
                             <i class="far fa-lightbulb smallIcon"></i>
                         </i>
-                        <h2>Intuitive</h2>
+                        <h2 class="skillNames">Intuitive</h2>
                         <strong>
                             <p>What more and what else would help our users? Always thinking of new ideas.</p>
                         </strong>
@@ -157,7 +157,7 @@ function onFrame(event) {
                         <i class="fas fa-certificate largeIcon">
                             <i class="fas fa-mobile-alt smallIcon"></i>
                         </i>
-                        <h2>Responsive</h2>
+                        <h2 class="skillNames">Responsive</h2>
                         <strong>
                             <p>Tablet or cell phone? My layouts will work on any device.</p>
                         </strong>
@@ -225,56 +225,62 @@ function onFrame(event) {
             <hr class="animated fadeInRight lineUnder" data-id="2">
                 <div class="row">
                 
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="3">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="3">
                     <div class="testing">
                         <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                         <div class="middle">
-                        <p><strong>Skinny Pig Deals</strong></p>
+                        <h4><strong>Skinny Pig Deals</strong></h4>
+                        <p>Online discount deal website</p>
                             <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                         </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="3">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="3">
                         <div class="testing">
                             <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                             <div class="middle">
-                            <p><strong>Skinny Pig Deals</strong></p>
+                            <h4><strong>YelpCamp</strong></h4>
+                            <p>Find campgrounds and post reviews</p>
                                 <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="3">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="3">
                         <div class="testing">
                             <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                             <div class="middle">
-                            <p><strong>Skinny Pig Deals</strong></p>
+                            <h4><strong>RGB Color Game</strong></h4>
+                            <p>Site to learn your RGB colors</p>
                                 <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="4">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="4">
                         <div class="testing">
                             <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                             <div class="middle">
-                            <p><strong>Skinny Pig Deals</strong></p>
+                            <h4><strong>Intelligence Quiz</strong></h4>
+                            <p>Quiz to see how smart you are</p>
                                 <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="4">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="4">
                         <div class="testing">
                             <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                             <div class="middle">
-                            <p><strong>Skinny Pig Deals</strong></p>
+                            <h4><strong>Cloud 9 Sounds</strong></h4>
+                            <p>Entertain yourself for days with amazing sounds</p>
                                 <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-4 animated fadeInUp" data-id="4">
+                    <div class="col-xs-12 col-md-4 animated fadeInUp" data-id="4">
                         <div class="testing">
                             <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">
                             <div class="middle">
-                            <p><strong>Skinny Pig Deals</strong></p>
+                            <h4><strong>Landing Page</strong></h4>
+                            <p>A demo landing page</p>
                                 <button type="button" data-toggle="modal" data-target="#exampleModal" class="projectButton">Learn More</button>
                             </div>
                         </div>
@@ -286,10 +292,11 @@ function onFrame(event) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel"><strong>Project Name</strong></h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h1 class="modal-title" id="exampleModalLabel"><strong>Project Name</strong></h1>
+        
       </div>
       <div class="modal-body">
         <img class="img-responsive img-rounded center-block trentonImage" src="Assets/Images/me2.png" alt="projects">

@@ -32,7 +32,7 @@ opacity: 1;
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 75%;
+  top: 34%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -155,6 +155,10 @@ strong p {
      padding-top:60px;
  }
 
+ .skillNames {
+     font-size:28px;
+ }
+
 
 .name {
     color:  #20d4ea;
@@ -173,7 +177,7 @@ canvas {
 }
 
 .titleFont {
-    font-size:42px;
+    font-size:26px;
 }
 
 
@@ -185,7 +189,7 @@ canvas {
 
 #intro {
     text-align:center;
-    padding-top:25vh;
+    padding-top:35vh;
     color:white;
 }
 
@@ -370,7 +374,7 @@ padding-right:8px;
     border: 2px solid #20d4ea;
     color: #20d4ea;
     font-size:20px;
-    padding:10px 15px;
+    padding:6px 15px;
     margin-top:10px;
     border-radius:8px;
 }
@@ -380,6 +384,23 @@ padding-right:8px;
     color: black;
     font-weight: 600;
 }
+/*Close modal button to make it bigger */
+.close {
+    font-size:42px;
+}
+/*This would be to make the modal full screen. Could put it in a media query if I want for mobile only?*/
+/* .modal-dialog {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin:0;
+}
+.modal-content {    
+      height: 100%;
+      border-radius: 0;
+      color:white;
+      overflow:auto;
+} */
 
 .projectButton {
     background-color: Transparent;
@@ -389,9 +410,17 @@ padding-right:8px;
     overflow: hidden;
     outline:none;
     border: 2px solid #20d4ea;
-    color: #20d4ea;
+    color: black;
     font-size:20px;
-    border-radius:8px;
+    padding: 5px 15px;
+    position:relative;
+    top:90px;
+}
+
+.projectButton:hover {
+    background-color: #20d4ea;
+    color: #FFF;
+    font-weight: 600;
 }
 
 .emailButton, emailButton:focus {
@@ -450,6 +479,12 @@ input[type=text], select, textarea {
       margin: 0 auto;
   }
 
+ 
+
+  .titleFont {
+    font-size:42px;
+}
+
   .socialIcon {
       top:14px;
   }
@@ -470,10 +505,6 @@ input[type=text], select, textarea {
 
 .lineUnderContact {
     width:18%;
-}
-
-#intro {
-    padding-top:35vh;
 }
 
 .skills {

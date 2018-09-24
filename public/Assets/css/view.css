@@ -143,6 +143,11 @@ strong p {
     margin-bottom:40px;
 }
 
+.carousel-control {
+    top:90%;
+    opacity:1;
+}
+
 .lineUnderContact {
     border: 0;
     height: 2px;

@@ -159,6 +159,12 @@ strong p {
 
 .live-project {
     background-color: #20d4ea;
+    color:black;
+}
+
+.github-project {
+    background-color: #DDDDDD;
+    color:black;
 }
 
 .carousel-control:hover, .carousel-control:focus {

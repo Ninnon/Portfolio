@@ -174,9 +174,6 @@ width:100%;
 margin: 5px 0px 5px 0px;
 }
 
-.close {
-    
-}
 
 .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {
     font-size:18px;
@@ -449,6 +446,7 @@ padding-right:8px;
     font-size:42px;
     margin-top:8px;
     line-height:0.6;
+    outline:none;
 }
 /*This would be to make the modal full screen. Could put it in a media query if I want for mobile only?*/
 /* .modal-dialog {

@@ -246,7 +246,7 @@ canvas {
 
 #intro {
     text-align:center;
-    padding-top:35vh;
+    padding-top:32vh;
     color:white;
 }
 
@@ -537,6 +537,10 @@ input[type=text], select, textarea {
   #contactForm {
       width: 55%;
       margin: 0 auto;
+  }
+
+  #intro {
+      padding-top:35vh;
   }
 
   .carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {

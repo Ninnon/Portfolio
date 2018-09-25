@@ -23,7 +23,7 @@ a {
 opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  height: 300px;
   transition: .5s ease;
   backface-visibility: hidden;
 }
@@ -161,6 +161,7 @@ strong p {
     background-color: #20d4ea;
     color:black;
 }
+
 
 .github-project {
     background-color: #DDDDDD;

@@ -22,6 +22,14 @@ function myFunction() {
         $('.navbar-collapse').collapse('hide');
     });
 
+    $('.myButton').on('mouseover', function () {
+       $('#workArrow').css("transform", "rotate(90deg)");
+    });
+
+    $('.myButton').on('mouseout', function () {
+        $('#workArrow').css("transform", "rotate(0deg)");
+    });
+
     if ($('body').width() < 768) {
         
 

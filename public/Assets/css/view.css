@@ -71,6 +71,8 @@ strong p {
     top:32px;
 
 }
+
+
  
 #aboutMe {
     padding-top: 50px;
@@ -448,6 +450,11 @@ padding-right:8px;
     color: black;
     font-weight: 600;
 }
+
+#workArrow {
+    transition-duration: 0.4s;
+}
+
 /*Close modal button to make it bigger */
 .close {
     font-size:42px;
